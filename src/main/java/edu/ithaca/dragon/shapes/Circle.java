@@ -24,9 +24,14 @@ public class Circle {
      * @post doubles the size of this circle
      */
     public void doubleSize(){
-        throw new RuntimeException("Not implemented yet");
+        this.radius = this.radius * 2;
     }
 
+    // added a get method to test doubleSize method
+    public double getRadius(){
+        return radius;
+    }
+    
     /**
      * @return the longest straight line that can be drawn within this circle
      */
