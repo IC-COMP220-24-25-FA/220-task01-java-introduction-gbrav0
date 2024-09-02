@@ -17,9 +17,11 @@ public class Rectangle {
     public double calcArea(){
        return this.length * this.width;
     }
-
+    
+    // Doubled length and width (doubling area)
     public void doubleSize(){
-        throw new RuntimeException("Not implemented yet");
+        this.length = this.length * 2;
+        this.width = this.width * 2;
     }
 
     public double longestLineWithin(){
