@@ -33,5 +33,11 @@ public class RectangleTest {
         myRec.doubleSize();
         assertEquals(24, myRec.calcArea());
     }
+
+    @Test 
+    public void longestLineWithinTest(){
+        Rectangle myRec = new Rectangle(2,1);
+        assertEquals(4, myRec.longestLineWithin());
+    }
     
 }
