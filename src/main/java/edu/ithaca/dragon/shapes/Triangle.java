@@ -7,7 +7,9 @@ public class Triangle {
 
 
     public Triangle(double sideA, double sideB, double sideC){
-        throw new IllegalAccessError("Not implemented yet");
+        if (sideA <= 0 || sideB <= 0 || sideC <= 0){
+            throw new IllegalArgumentException("All sides need to be positive.");
+        }
     }
 
     public double calcArea(){
