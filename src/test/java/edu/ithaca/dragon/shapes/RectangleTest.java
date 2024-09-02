@@ -27,5 +27,11 @@ public class RectangleTest {
         assertEquals(8, myRec.calcArea(), 0.0000000001);
     }
 
+    @Test 
+    public void doubleSizeTest(){
+        Rectangle myRec = new Rectangle(2,3);
+        myRec.doubleSize();
+        assertEquals(24, myRec.calcArea());
+    }
     
 }
