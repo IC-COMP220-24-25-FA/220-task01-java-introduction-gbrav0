@@ -8,8 +8,8 @@ public class Rectangle {
     public Rectangle(double length, double width){
         if (length <= 0 || width <= 0){
             throw new IllegalArgumentException("Needs to be positive number");
-
         }
+        
         this.length = length;
         this.width = width; 
     }

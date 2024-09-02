@@ -13,5 +13,19 @@ public class RectangleTest {
     public void TestConstructorError(){
         assertThrows(IllegalArgumentException.class, () -> new Rectangle(0,0));
     }
+
+    @Test
+    public void calcAreaTest(){
+        Rectangle myRec= new Rectangle(1,2);
+        //3rd parameter says how far off it can be since it is a double
+        assertEquals(2, myRec.calcArea(), 0.0001);
+        
+        myRec = new Rectangle(2,3);
+        assertEquals(6, myRec.calcArea(), 0.0001);
+
+        myRec = new Rectangle(4,2);
+        assertEquals(8, myRec.calcArea(), 0.0000000001);
+    }
+
     
 }
