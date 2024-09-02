@@ -37,7 +37,7 @@ public class RectangleTest {
     @Test 
     public void longestLineWithinTest(){
         Rectangle myRec = new Rectangle(2,1);
-        assertEquals(4, myRec.longestLineWithin());
+        assertEquals(2.24, myRec.longestLineWithin(), 0.01);
     }
     
 }
