@@ -5,18 +5,17 @@ public class Triangle {
     private double sideB;
 
 
-    public Triangle(double sideA, double sideB){
-        if (sideA <= 0 || sideB <= 0){
+    public Triangle(double base, double height){
+        if (base <= 0 || height <= 0){
             throw new IllegalArgumentException("All sides need to be positive.");
         }
 
-        double base = sideA;
-        double height = sideB;
+        sideA = base;
+        sideB = height;
     }
 
     public double calcArea(){
-        throw new IllegalAccessError("Not implemented yet");
-
+        return (sideA * sideB) / 2;
 
     }
 
