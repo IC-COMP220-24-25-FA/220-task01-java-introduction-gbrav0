@@ -14,4 +14,10 @@ public class TriangleTest {
         assertThrows(IllegalArgumentException.class, () -> new Triangle(1,2,0));
     }
     
+    @Test 
+    public void calcAreaTest(){
+        Triangle myTriangle = new Triangle(1,1,1);
+        assertEquals(0.5, myTriangle.calcArea(),0.001);
+
+    }
 }

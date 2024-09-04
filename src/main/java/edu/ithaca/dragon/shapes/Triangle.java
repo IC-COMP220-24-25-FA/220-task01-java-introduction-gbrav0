@@ -10,6 +10,10 @@ public class Triangle {
         if (sideA <= 0 || sideB <= 0 || sideC <= 0){
             throw new IllegalArgumentException("All sides need to be positive.");
         }
+
+        double sideOne = sideA;
+        double sideTwo = sideB;
+        double sideThree = sideC;
     }
 
     public double calcArea(){
