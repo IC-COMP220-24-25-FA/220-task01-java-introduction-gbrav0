@@ -1,6 +1,6 @@
 package edu.ithaca.dragon.shapes;
 
-public class Triangle {
+public class Triangle implements Shape {
     private double sideA;
     private double sideB;
 
@@ -20,11 +20,11 @@ public class Triangle {
     }
 
     public double longestLineWithin(){
-        throw new IllegalAccessError("Not implemented yet");
+        return Math.hypot(sideB, sideA);
 
     }
 
-    public double doubleSize(){
+    public void doubleSize(){
         throw new IllegalAccessError("Not implemented yet");
 
     }

@@ -18,6 +18,14 @@ public class TriangleTest {
     public void calcAreaTest(){
         Triangle myTriangle = new Triangle(1,1);
         assertEquals(0.5, myTriangle.calcArea(),0.001);
+    }
+
+    @Test 
+    public void longestLineWithinTest(){
+        Triangle myTriangle = new Triangle(1,1);
+        assertEquals(0.5, myTriangle.calcArea(),0.001);
 
     }
+
+    
 }
