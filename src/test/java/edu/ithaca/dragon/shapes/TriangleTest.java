@@ -27,5 +27,12 @@ public class TriangleTest {
 
     }
 
+    @Test 
+    public void doubleSizeTest(){
+        Triangle myTriangle = new Triangle(2, 3);
+        myTriangle.doubleSize();
+        assertEquals(12, myTriangle.calcArea());
+    }
+
     
 }
