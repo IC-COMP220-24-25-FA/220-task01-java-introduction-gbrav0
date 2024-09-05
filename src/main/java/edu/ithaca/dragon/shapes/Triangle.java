@@ -25,7 +25,8 @@ public class Triangle implements Shape {
     }
 
     public void doubleSize(){
-        throw new IllegalAccessError("Not implemented yet");
+        sideA = sideA * 2;
+        sideB = sideB * 2;
 
     }
 }
