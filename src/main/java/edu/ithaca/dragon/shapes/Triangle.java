@@ -29,4 +29,8 @@ public class Triangle implements Shape {
         sideB = sideB * 2;
 
     }
+
+    public String toString(){
+        return "Triangle Base: " + sideA + " | " + "Triangle Height: " + sideB;
+    }
 }

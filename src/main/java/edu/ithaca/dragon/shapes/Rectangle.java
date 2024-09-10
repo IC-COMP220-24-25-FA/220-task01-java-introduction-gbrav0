@@ -27,5 +27,9 @@ public class Rectangle implements Shape {
     public double longestLineWithin(){
         return Math.hypot(this.length, this.width);
     }
+
+    public String toString(){
+        return "Rectangle Length: " + length + " | " + "Rectangle Width: " + width; 
+    }
     
 }

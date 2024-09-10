@@ -14,6 +14,32 @@ public class ShapeMain {
         //Allow the user to choose one, double the size of that one, and print them all again
         //Use a loop to repeat the process 5 times
 
+        List<Shape> shapes = new ArrayList<>();
+        for (int i = 0; i < 10; i++){
+            int shapeType = random.nextInt(3);
+            switch (shapeType) {
+                case 0:
+                    shapes.add(new Circle(1 + random.nextDouble() * 9));
+                    break;
+                case 1:
+                    shapes.add(new Rectangle(1 + random.nextDouble() * 9, 1 + random.nextDouble() * 9));
+                    break;
+                case 2:
+                    shapes.add(new Triangle(1 + random.nextDouble() * 9, 1 + random.nextDouble() * 9));
+                    break;
+            }
+        }
+
+        for (Shape shape : shapes) {
+            System.out.println(shape.toString());
+        }
+        
+        System.out.println("Doubling all shapes");
+        for (Shape shape : shapes) {
+            shape.doubleSize();
+            System.out.println(shape.toString());
+        }
+        
         for (int i = 0; i < 5; i++) {
             List<Rectangle> rectangles = new ArrayList<>();
             for (int j = 0; j < 5; j++) {

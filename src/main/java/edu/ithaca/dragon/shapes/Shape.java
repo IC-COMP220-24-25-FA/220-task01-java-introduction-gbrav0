@@ -6,4 +6,6 @@ public interface Shape {
      public void doubleSize();
  
      public double longestLineWithin();
+
+     public String toString();
 }
