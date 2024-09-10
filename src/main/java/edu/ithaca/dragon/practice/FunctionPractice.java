@@ -72,7 +72,23 @@ public class FunctionPractice {
      * @return the string that has contains the most occurences of the given letter
      */
     public static String findFirstMostOccurencesOfLetter(List<String> words, char letter){
-        throw new RuntimeException("Not Implemented");
+        String mostOccur = null;
+        int maxCount = 0;
+
+        for (String word: words) {
+            int count = 0;
+            for (char ch : word.toCharArray()) {
+                if (ch == letter){
+                    count++;
+                }
+            }
+            
+            if (count > maxCount) {
+                maxCount = count;
+                mostOccur = word;
+            } 
+        }
+        return mostOccur;
     }
 
 

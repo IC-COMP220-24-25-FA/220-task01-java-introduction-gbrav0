@@ -71,6 +71,6 @@ public class FunctionPracticeTest {
         myStr = Arrays.asList("hello","world","octopus");
         assertEquals("octopus", FunctionPractice.findFirstMostOccurencesOfLetter(myStr, 'o'));
         myStr = Arrays.asList("hph","hjh","heh");
-        assertEquals("heh", FunctionPractice.findFirstMostOccurencesOfLetter(myStr, 'h'));
+        assertEquals("hph", FunctionPractice.findFirstMostOccurencesOfLetter(myStr, 'h'));
     }
 }
