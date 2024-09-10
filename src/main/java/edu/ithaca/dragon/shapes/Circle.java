@@ -1,6 +1,6 @@
 package edu.ithaca.dragon.shapes;
 
-public class Circle {
+public class Circle implements Shape {
     private double radius;
 
     /**
@@ -37,5 +37,10 @@ public class Circle {
      */
     public double longestLineWithin(){
         return this.radius * 2;
+    }
+
+    public String toString(){
+        return "Radius of Circle: " + radius;
+
     }
 }
