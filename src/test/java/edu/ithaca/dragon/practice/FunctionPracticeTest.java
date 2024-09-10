@@ -27,7 +27,7 @@ public class FunctionPracticeTest {
 
     @Test
     public void calcSalePriceTest(){
-        assertEquals(10, FunctionPractice.calcSalePrice(20, 7, 2)); 
+        assertEquals(10, FunctionPractice.calcSalePrice(20, 7, 3)); 
     }
     
     @Test

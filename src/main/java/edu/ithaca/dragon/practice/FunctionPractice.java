@@ -21,14 +21,18 @@ public class FunctionPractice {
      * @return the final price at register of the given item after discount and tax applied
      */
     public static double calcSalePrice(double originalPrice, double discountPercent, double salesTax){
-        throw new RuntimeException("Not Implemented");
+        return (originalPrice - discountPercent) - salesTax;
     }
 
     /**
      * @return true if the data collected shows the dog is good, false if bad dog today
      */
     public static boolean isGoodDog(int yearsOld, int daysSinceShoesChewed, boolean fetchedThePaperToday){
-        throw new RuntimeException("Not Implemented");
+        if (daysSinceShoesChewed >= 5 && fetchedThePaperToday == true){
+            return true;
+        } else { 
+            return false;
+        }
     }
 
     /**
@@ -36,7 +40,16 @@ public class FunctionPractice {
      * If the largest number occurs more than once, return the index of the first occurence.
      */
     public static int findFirstLargest(List<Integer> numbers){
-        throw new RuntimeException("Not Implemented");
+        if (numbers.size() == 0){
+            return -1;
+        }
+        int maxIndex = 0;
+        for (int i = 1; i < numbers.size(); i++){
+            if (numbers.get(i) > numbers.get(maxIndex)){
+                maxIndex = i;
+            }
+        }
+        return maxIndex;
     }
 
     /**
@@ -44,9 +57,17 @@ public class FunctionPractice {
      * If the largest number occurs more than once, return the index of the last occurence.
      */
     public static int findLastLargest(List<Integer> numbers){
-        throw new RuntimeException("Not Implemented");
+        if (numbers.size() == 0){
+            return -1;
+        }
+        int maxIndex = 0;
+        for (int i = 1; i < numbers.size(); i++){
+            if (numbers.get(i) >= numbers.get(maxIndex)){
+                maxIndex = i;
+            }
+        }
+        return maxIndex;
     }
-
     /**
      * @return the string that has contains the most occurences of the given letter
      */
